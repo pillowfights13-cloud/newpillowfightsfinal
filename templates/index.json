@@ -15,8 +15,8 @@
         "image_8yQdF4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/websitebanner_b23b79bd-b32b-4439-b8d8-c5a968b063cc.webp",
-            "mobile_image": "shopify://shop_images/mobilediwali_35b609e5-e5ca-4e26-86b4-e0b31b14fd9c.webp",
+            "image": "shopify://shop_images/Desktop_Banner.webp",
+            "mobile_image": "shopify://shop_images/Mobile.webp",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-center text-center",
