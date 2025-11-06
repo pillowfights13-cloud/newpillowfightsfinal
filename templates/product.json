@@ -1,1 +1,310 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"heading_tag":"h3"}},"price":{"type":"price","settings":{"show_taxes_notice":false}},"variant_picker":{"type":"variant_picker","settings":{"hide_sold_out_variants":true,"selector_style":"block","swatch_selector_style":"none","variant_image_options":"","size_chart_page":""}},"quantity_selector":{"type":"quantity_selector","settings":{}},"liquid_ETrPEP":{"type":"liquid","name":"Limited aleart","settings":{"liquid":"{% assign current_variant = product.selected_or_first_available_variant %}\n\n{% if current_variant.inventory_quantity <= 5 and current_variant.inventory_quantity != 0 %}\n<div class=\"unique-container-Plm987\">\n  <div class=\"unique-circle-Hjk632\"><\/div>\n  <span class=\"unique-text-Bvc123\">Hurry up! Only <span class='highlight'>{{ current_variant.inventory_quantity  }}<\/span> items left!<\/span>\n<\/div>\n{% endif %}\n\n\n<style>\n  @keyframes unique-glow-Ytr849 {\n    0% { box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.7); }\n    50% { box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5); }\n    100% { box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.7); }\n  }\n\n  .unique-circle-Hjk632 {\n    width: 10px;\n    height: 10px;\n    border-radius: 50%;\n    background-color: #8b0000; \/* Daha koyu kırmızı renk *\/\n    display: inline-block;\n    animation: unique-glow-Ytr849 1s infinite ease-in-out; \/* 1s süreyle hızlandırılmış ışık saçma animasyonu *\/\n  }\n\n  .unique-container-Plm987 {\n    background-color: #ffe6e6;\n    border: 1px solid #E2E2E2;\n    border-radius: 10px;\n    padding: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .unique-text-Bvc123 {\n    margin-left: 10px;\n    font-size: 13px;\n  }\n\n.highlight{\nmargin-inline : 2px;\ncolor : #8b0000;\n}\n<\/style>"}},"liquid_kfBm7C":{"type":"liquid","disabled":true,"settings":{"liquid":"<div class=\"reviews-container\">\n  <div class=\"avatars\">\n    <img\n      src=\"https:\/\/img.freepik.com\/free-photo\/stylish-african-american-woman-smiling_23-2148770405.jpg\"\n      alt=\"Customer 1\"\n      class=\"avatar\"\n    \/>\n    <img\n      src=\"https:\/\/thumbs.dreamstime.com\/b\/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\"\n      alt=\"Customer 2\"\n      class=\"avatar\"\n    \/>\n    <img\n      src=\"https:\/\/media.istockphoto.com\/id\/1320651997\/photo\/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\"\n      alt=\"Customer 3\"\n      class=\"avatar\"\n    \/>\n  <\/div>\n  <span class=\"text-grey\">\nrated <strong>4.5\/5<\/strong> based on <strong>+650 Reviews<\/strong>\n<\/span>\n<\/div>\n\n<style>\n  .reviews-container {\n    display: flex;\n    align-items: center;\n    border : 1px solid #DDDDDD;\n    padding : 10px;\n  }\n\n  .avatars {\n    display: flex;\n    margin-right: 5px;\n    margin-left: 7px;\n  }\n\n  .avatar {\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    border: 2px solid white;\n    margin-left: -7px;\n    object-fit: cover;\n  }\n\n  .text-grey {\n    font-weight: normal;\n    font-size: 15px;\n    color: #868686;\n  line-height: 0px;\n\n  }\n\n  .text-grey strong {\n    font-weight: 800;\n\ncolor: #2e2f3c\n  }\n\n<\/style>"}},"buy_buttons_KXqxbU":{"type":"buy_buttons","settings":{"show_payment_button":true,"show_gift_card_recipient":true,"atc_button_background":"","atc_button_text_color":"","payment_button_background":"","payment_button_text_color":""}},"essential_upsell_frequently_bought_together_app_block_GPrnWP":{"type":"shopify:\/\/apps\/essential-upsell\/blocks\/frequently-bought-together-app-block\/50627fd9-24fd-4250-8614-accc12826d80","settings":{}},"liquid_WKVNRx":{"type":"liquid","disabled":true,"settings":{"liquid":"<div class=\"ultimate-badges\"><\/div>"}},"share_buttons_xqmX9W":{"type":"share_buttons","settings":{}},"payment_terms":{"type":"payment_terms","settings":{}},"separator":{"type":"separator","settings":{}},"text_PiUfjT":{"type":"text","settings":{"text":"<p><strong>Ships in : 4 days<\/strong><\/p><p><strong>Now Avail easy COD options (T&Cs applied)<\/strong><\/p>"}},"feature_with_icon_tAzatG":{"type":"feature_with_icon","settings":{"text":"<strong>FREE SHIPPING INDIA<\/strong>","link":"","icon":"picto-delivery-truck","icon_width":16,"background":"#ffffff","text_color":"#6b6b6b","border_color":""}},"feature_with_icon_8GimAJ":{"type":"feature_with_icon","settings":{"text":"<strong>Handcrafted In India<\/strong>","link":"","icon":"picto-earth","icon_width":16,"background":"#ffffff","text_color":"#6b6b6b","border_color":""}},"feature_with_icon_MULPBD":{"type":"feature_with_icon","settings":{"text":"<strong>24\/7 SUPPORT : CALL US ANYTIME AT +919818821453<\/strong>","link":"","icon":"picto-operator","icon_width":16,"background":"#ffffff","text_color":"#6b6b6b","border_color":""}},"liquid_zhhNCC":{"type":"liquid","name":"Description","settings":{"liquid":"{% if  product.description %}\n {%- render 'accordion', title: \"Description\", content: product.description, prose_content: true, block: block open : true -%}\n{% endif %}"}},"liquid_Fnx7f9":{"type":"liquid","name":"Dimensions","settings":{"liquid":"{% comment %}\n  This 'if' statement checks if the metafield is not nil (doesn't exist)\n  and not blank (an empty string \"\"). If it has any content, the code inside will run.\n{% endcomment %}\n{%- if product.metafields.custom.dimensions != blank -%}\n  {%- render 'accordion', title: \"Dimensions\", content: product.metafields.custom.dimensions, prose_content: true, block: block -%}\n{%- endif -%}"}},"liquid_EmJbdg":{"type":"liquid","name":"Weight","settings":{"liquid":"{%- assign variant = product.selected_or_first_available_variant -%}\n\n{% capture content %}\n  {{ variant.weight | weight_with_unit: variant.weight_unit }}\n{% endcapture %}\n\n{%- if variant.weight > 0 -%}\n  {%- render 'accordion', title: \"Weight\", content:content, prose_content: true, block: block -%}\n{%- endif -%}"}},"liquid_dyTKGx":{"type":"liquid","name":"Material","settings":{"liquid":"{%- if product.metafields.custom.material != blank -%}\n  {%- render 'accordion', title: \"Material\", content: product.metafields.custom.material, prose_content: true, block: block -%}\n{%- endif -%}"}},"liquid_CGjmY3":{"type":"liquid","settings":{"liquid":"{%- if product.metafields.custom.weight != blank -%}\n  {%- render 'accordion', title: \"Weight\", content: product.metafields.custom.weight, prose_content: true, block: block -%}\n{%- endif -%}"}},"liquid_WdDaGN":{"type":"liquid","name":"Return and Shipping Policy","settings":{"liquid":"{%- render 'accordion',\n  title: \"Return and Shipping Policy\",\n  content: 'For any product related exchange\/return request, you may write to us by emailing any day at <a href=\"mailto:contact@pillowfights.co.in\">contact@pillowfights.co.in<\/a>. You would be required to mention your order number and reason for your request being made for exchange\/cancellation. <a href=\"https:\/\/pillowfights.co.in\/policies\/refund-policy\">Read More<\/a>',\n  prose_content: true,\n  block: block\n-%}"}},"complementary_products":{"type":"complementary_products","settings":{"title":"Pairs well with","products_count":2,"show_below_gallery":true,"stack_products":true,"show_quick_buy":true}}},"block_order":["title","price","variant_picker","quantity_selector","liquid_ETrPEP","liquid_kfBm7C","buy_buttons_KXqxbU","essential_upsell_frequently_bought_together_app_block_GPrnWP","liquid_WKVNRx","share_buttons_xqmX9W","payment_terms","separator","text_PiUfjT","feature_with_icon_tAzatG","feature_with_icon_8GimAJ","feature_with_icon_MULPBD","liquid_zhhNCC","liquid_Fnx7f9","liquid_EmJbdg","liquid_dyTKGx","liquid_CGjmY3","liquid_WdDaGN","complementary_products"],"settings":{"color_scheme":"scheme-fa44c3a0-dca0-4e1f-a29e-61e88c2d3e24","container_size":"xl","product_info_size":42,"show_sticky_add_to_cart":true,"center_basic_info":false,"desktop_media_layout":"grid_2x","desktop_media_grid_gap":30,"mobile_controls":"dots","enable_media_autoplay":false,"enable_video_looping":true,"enable_image_zoom":true,"max_image_zoom_level":1}},"related-products":{"type":"related-products","settings":{"color_scheme":"","separate_section_with_border":true,"hide_product_information":false,"stack_products":false,"recommendations_count":10,"products_per_row_mobile":"2","products_per_row_desktop":4,"horizontal_spacing_factor":1,"vertical_spacing_factor":1,"subheading":"","title":"Related products","content":""}},"recently_viewed_products_tgXYC8":{"type":"recently-viewed-products","name":"t:sections.recently_viewed_products.presets.recently_viewed_products.name","settings":{"separate_section_with_border":true,"color_scheme":"","hide_product_information":false,"stack_products":false,"products_count":9,"products_per_row_mobile":"2","products_per_row_desktop":4,"horizontal_spacing_factor":1,"vertical_spacing_factor":1,"subheading":"","title":"Recently viewed products","content":""}},"17596707483c8d295f":{"type":"apps","blocks":{"judge_me_reviews_featured_carousel_hPkirX":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"maxwidth":1080}},"judge_me_reviews_review_widget_iKYJGe":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"review_data":"sample_data","show_shop_reviews":false,"empty_state":"empty_widget","max_width":1200}}},"block_order":["judge_me_reviews_featured_carousel_hPkirX","judge_me_reviews_review_widget_iKYJGe"],"settings":{"color_scheme":"","separate_section_with_border":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false}},"17576222612d6cf472":{"type":"apps","settings":{"color_scheme":"","separate_section_with_border":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false}}},"order":["main","related-products","recently_viewed_products_tgXYC8","17596707483c8d295f","17576222612d6cf472"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "liquid_ETrPEP": {
+          "type": "liquid",
+          "name": "Limited aleart",
+          "settings": {
+            "liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n\n{% if current_variant.inventory_quantity <= 5 and current_variant.inventory_quantity != 0 %}\n<div class=\"unique-container-Plm987\">\n  <div class=\"unique-circle-Hjk632\"></div>\n  <span class=\"unique-text-Bvc123\">Hurry up! Only <span class='highlight'>{{ current_variant.inventory_quantity  }}</span> items left!</span>\n</div>\n{% endif %}\n\n\n<style>\n  @keyframes unique-glow-Ytr849 {\n    0% { box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.7); }\n    50% { box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5); }\n    100% { box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.7); }\n  }\n\n  .unique-circle-Hjk632 {\n    width: 10px;\n    height: 10px;\n    border-radius: 50%;\n    background-color: #8b0000; /* Daha koyu kırmızı renk */\n    display: inline-block;\n    animation: unique-glow-Ytr849 1s infinite ease-in-out; /* 1s süreyle hızlandırılmış ışık saçma animasyonu */\n  }\n\n  .unique-container-Plm987 {\n    background-color: #ffe6e6;\n    border: 1px solid #E2E2E2;\n    border-radius: 10px;\n    padding: 10px;\n    margin-top: 5px;\n    margin-bottom: 5px;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .unique-text-Bvc123 {\n    margin-left: 10px;\n    font-size: 13px;\n  }\n\n.highlight{\nmargin-inline : 2px;\ncolor : #8b0000;\n}\n</style>"
+          }
+        },
+        "liquid_kfBm7C": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"reviews-container\">\n  <div class=\"avatars\">\n    <img\n      src=\"https://img.freepik.com/free-photo/stylish-african-american-woman-smiling_23-2148770405.jpg\"\n      alt=\"Customer 1\"\n      class=\"avatar\"\n    />\n    <img\n      src=\"https://thumbs.dreamstime.com/b/beautiful-african-american-woman-relaxing-outside-happy-middle-aged-smiling-46298787.jpg\"\n      alt=\"Customer 2\"\n      class=\"avatar\"\n    />\n    <img\n      src=\"https://media.istockphoto.com/id/1320651997/photo/young-woman-close-up-isolated-studio-portrait.jpg?s=612x612&w=0&k=20&c=lV6pxz-DknISGT2jjiSvUmSaw0hpMDf-dBpT8HTSAUI=\"\n      alt=\"Customer 3\"\n      class=\"avatar\"\n    />\n  </div>\n  <span class=\"text-grey\">\nrated <strong>4.5/5</strong> based on <strong>+650 Reviews</strong>\n</span>\n</div>\n\n<style>\n  .reviews-container {\n    display: flex;\n    align-items: center;\n    border : 1px solid #DDDDDD;\n    padding : 10px;\n  }\n\n  .avatars {\n    display: flex;\n    margin-right: 5px;\n    margin-left: 7px;\n  }\n\n  .avatar {\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    border: 2px solid white;\n    margin-left: -7px;\n    object-fit: cover;\n  }\n\n  .text-grey {\n    font-weight: normal;\n    font-size: 15px;\n    color: #868686;\n  line-height: 0px;\n\n  }\n\n  .text-grey strong {\n    font-weight: 800;\n\ncolor: #2e2f3c\n  }\n\n</style>"
+          }
+        },
+        "buy_buttons_KXqxbU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "razorpay_cod_magic_checkout_affordability_block_rB8QwL": {
+          "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/affordability-block/c13c688d-5c45-4054-b95f-1edd63faa705",
+          "settings": {}
+        },
+        "essential_upsell_frequently_bought_together_app_block_GPrnWP": {
+          "type": "shopify://apps/essential-upsell/blocks/frequently-bought-together-app-block/50627fd9-24fd-4250-8614-accc12826d80",
+          "settings": {}
+        },
+        "liquid_WKVNRx": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"ultimate-badges\"></div>"
+          }
+        },
+        "share_buttons_xqmX9W": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "text_PiUfjT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ships in : 4 days</strong></p><p><strong>Now Avail easy COD options (T&Cs applied)</strong></p>"
+          }
+        },
+        "feature_with_icon_tAzatG": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<strong>FREE SHIPPING INDIA</strong>",
+            "link": "",
+            "icon": "picto-delivery-truck",
+            "icon_width": 16,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_8GimAJ": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<strong>Handcrafted In India</strong>",
+            "link": "",
+            "icon": "picto-earth",
+            "icon_width": 16,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_MULPBD": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<strong>24/7 SUPPORT : CALL US ANYTIME AT +919818821453</strong>",
+            "link": "",
+            "icon": "picto-operator",
+            "icon_width": 16,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "liquid_zhhNCC": {
+          "type": "liquid",
+          "name": "Description",
+          "settings": {
+            "liquid": "{% if  product.description %}\n {%- render 'accordion', title: \"Description\", content: product.description, prose_content: true, block: block open : true -%}\n{% endif %}"
+          }
+        },
+        "liquid_Fnx7f9": {
+          "type": "liquid",
+          "name": "Dimensions",
+          "settings": {
+            "liquid": "{% comment %}\n  This 'if' statement checks if the metafield is not nil (doesn't exist)\n  and not blank (an empty string \"\"). If it has any content, the code inside will run.\n{% endcomment %}\n{%- if product.metafields.custom.dimensions != blank -%}\n  {%- render 'accordion', title: \"Dimensions\", content: product.metafields.custom.dimensions, prose_content: true, block: block -%}\n{%- endif -%}"
+          }
+        },
+        "liquid_EmJbdg": {
+          "type": "liquid",
+          "name": "Weight",
+          "settings": {
+            "liquid": "{%- assign variant = product.selected_or_first_available_variant -%}\n\n{% capture content %}\n  {{ variant.weight | weight_with_unit: variant.weight_unit }}\n{% endcapture %}\n\n{%- if variant.weight > 0 -%}\n  {%- render 'accordion', title: \"Weight\", content:content, prose_content: true, block: block -%}\n{%- endif -%}"
+          }
+        },
+        "liquid_dyTKGx": {
+          "type": "liquid",
+          "name": "Material",
+          "settings": {
+            "liquid": "{%- if product.metafields.custom.material != blank -%}\n  {%- render 'accordion', title: \"Material\", content: product.metafields.custom.material, prose_content: true, block: block -%}\n{%- endif -%}"
+          }
+        },
+        "liquid_CGjmY3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%- if product.metafields.custom.weight != blank -%}\n  {%- render 'accordion', title: \"Weight\", content: product.metafields.custom.weight, prose_content: true, block: block -%}\n{%- endif -%}"
+          }
+        },
+        "liquid_WdDaGN": {
+          "type": "liquid",
+          "name": "Return and Shipping Policy",
+          "settings": {
+            "liquid": "{%- render 'accordion',\n  title: \"Return and Shipping Policy\",\n  content: 'For any product related exchange/return request, you may write to us by emailing any day at <a href=\"mailto:contact@pillowfights.co.in\">contact@pillowfights.co.in</a>. You would be required to mention your order number and reason for your request being made for exchange/cancellation. <a href=\"https://pillowfights.co.in/policies/refund-policy\">Read More</a>',\n  prose_content: true,\n  block: block\n-%}"
+          }
+        },
+        "complementary_products": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Pairs well with",
+            "products_count": 2,
+            "show_below_gallery": true,
+            "stack_products": true,
+            "show_quick_buy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "liquid_ETrPEP",
+        "liquid_kfBm7C",
+        "buy_buttons_KXqxbU",
+        "razorpay_cod_magic_checkout_affordability_block_rB8QwL",
+        "essential_upsell_frequently_bought_together_app_block_GPrnWP",
+        "liquid_WKVNRx",
+        "share_buttons_xqmX9W",
+        "payment_terms",
+        "separator",
+        "text_PiUfjT",
+        "feature_with_icon_tAzatG",
+        "feature_with_icon_8GimAJ",
+        "feature_with_icon_MULPBD",
+        "liquid_zhhNCC",
+        "liquid_Fnx7f9",
+        "liquid_EmJbdg",
+        "liquid_dyTKGx",
+        "liquid_CGjmY3",
+        "liquid_WdDaGN",
+        "complementary_products"
+      ],
+      "settings": {
+        "color_scheme": "scheme-fa44c3a0-dca0-4e1f-a29e-61e88c2d3e24",
+        "container_size": "xl",
+        "product_info_size": 42,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid_2x",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 1
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "content": ""
+      }
+    },
+    "recently_viewed_products_tgXYC8": {
+      "type": "recently-viewed-products",
+      "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "",
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": ""
+      }
+    },
+    "17596707483c8d295f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_hPkirX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        },
+        "judge_me_reviews_review_widget_iKYJGe": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_hPkirX",
+        "judge_me_reviews_review_widget_iKYJGe"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "17576222612d6cf472": {
+      "type": "apps",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "recently_viewed_products_tgXYC8",
+    "17596707483c8d295f",
+    "17576222612d6cf472"
+  ]
+}
