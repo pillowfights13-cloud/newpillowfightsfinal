@@ -72,24 +72,11 @@
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
 
 
-    {% comment %}
-      Google Tag Manager Code
-    {% endcomment %}
-
-    <!-- Google tag (gtag.js) -->
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-ENDXQZ7M2V"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ENDXQZ7M2V');
-    </script>
 
     {% comment %}
       Microsoft Clarity
     {% endcomment %}
-  <script>
+  <script defer>
   window.addEventListener("load", function () {
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -101,18 +88,6 @@
 
 
 
-
-{% comment %}
-  Google tag manager
-{% endcomment %}
-
-  <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-ND49G74K');</script>
-    <!-- End Google Tag Manager -->
 
   </head>
 
