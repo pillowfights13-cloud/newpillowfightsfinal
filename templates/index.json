@@ -168,7 +168,6 @@
         "category_9pmqDY",
         "category_47gEcP"
       ],
-      "disabled": true,
       "name": "Featured Categories Slider",
       "settings": {}
     },
@@ -309,6 +308,7 @@
         "collection_URWULf",
         "collection_UK8X8D"
       ],
+      "disabled": true,
       "name": "t:sections.collection_list.presets.collection_list.name",
       "settings": {
         "color_scheme": "scheme-ac07a60c-aa0c-42de-86a5-319cfe6f874c",
