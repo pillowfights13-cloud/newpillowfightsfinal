@@ -180,8 +180,8 @@
           "settings": {
             "collection": "copper-cure",
             "products_count": 8,
-            "title": "",
-            "link_url": "",
+            "title": "Copper Bottle",
+            "link_url": "shopify://collections/copper-bottle",
             "link_text": "View all"
           }
         },
