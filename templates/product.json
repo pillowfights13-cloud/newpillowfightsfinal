@@ -15,7 +15,13 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h3"
+            "heading_tag": "h5"
+          }
+        },
+        "liquid_rChVhc": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.custom.features.value %}\n  <style>\n    .pf-feature-chips {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 8px;\n      margin: 10px 0 18px;\n    }\n\n    .pf-feature-chip {\n      display: inline-flex;\n      align-items: baseline;\n      column-gap: 4px;\n      padding: 6px 14px;\n      border-radius: 0px;\n      background: #f1f1f1;\n      font-size: 12px;\n      line-height: 1.4;\n      color: #1c1c1c;\n      white-space: nowrap;\n    }\n\n    .pf-feature-chip-main {\n      font-weight: 600;\n    }\n\n    .pf-feature-chip-sub {\n      color: #777;\n    }\n\n    @media (max-width: 480px) {\n      .pf-feature-chip {\n        white-space: normal; /* wrap nicely on small screens */\n      }\n    }\n  </style>\n\n  <div class=\"pf-feature-chips\">\n    {% for feature in product.metafields.custom.features.value %}\n      {% assign parts = feature | split: \"|\" %}\n      <div class=\"pf-feature-chip\">\n        <span class=\"pf-feature-chip-main\">{{ parts[0] | strip }}</span>\n      </div>\n    {% endfor %}\n  </div>\n{% endif %}"
           }
         },
         "price": {
@@ -62,10 +68,6 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
-        },
-        "razorpay_cod_magic_checkout_affordability_block_rB8QwL": {
-          "type": "shopify://apps/razorpay-cod-magic-checkout/blocks/affordability-block/c13c688d-5c45-4054-b95f-1edd63faa705",
-          "settings": {}
         },
         "essential_upsell_frequently_bought_together_app_block_GPrnWP": {
           "type": "shopify://apps/essential-upsell/blocks/frequently-bought-together-app-block/50627fd9-24fd-4250-8614-accc12826d80",
@@ -186,13 +188,13 @@
       },
       "block_order": [
         "title",
+        "liquid_rChVhc",
         "price",
         "variant_picker",
         "quantity_selector",
         "liquid_ETrPEP",
         "liquid_kfBm7C",
         "buy_buttons_KXqxbU",
-        "razorpay_cod_magic_checkout_affordability_block_rB8QwL",
         "essential_upsell_frequently_bought_together_app_block_GPrnWP",
         "liquid_WKVNRx",
         "share_buttons_xqmX9W",
