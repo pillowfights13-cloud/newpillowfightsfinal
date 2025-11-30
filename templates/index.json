@@ -328,6 +328,7 @@
       "blocks": {
         "image_4LPrzG": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Make_Your_Home_a_Symbol_of_Swa.jpg",
             "mobile_image": "shopify://shop_images/Make_Your_Home_a_Symbol_of_Swadeshi.jpg",
