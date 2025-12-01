@@ -15,13 +15,13 @@
         "liquid_LwmCAm": {
           "type": "liquid",
           "settings": {
-            "liquid": "{% if product.metafields.custom.bestseller == true %}\n  <span class=\"pf-badge-bestseller\">\n    Best Seller\n  </span>\n{% endif %}\n\n\n<style>\n.pf-badge-bestseller {\n  display: inline-block;\n  padding: 4px 10px;\n  font-size: 12px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n\n  background: #FF0000;        /* red background */\n  color: #ffffff;             /* white text */\n  border: 1px solid #FF0000;  /* red border */\n  border-radius: 0;           /* NOT rounded */\n\n  line-height: 1.2;\n}\n\n/* Mobile – center the badge */\n@media (max-width: 749px) {\n  .pf-badge-bestseller {\n    display: block;\n    text-align: center;\n    margin: 8px auto 0;      /* center horizontally */\n  }\n}\n\n/* Desktop – align neatly to the left */\n@media (min-width: 750px) {\n  .pf-badge-bestseller {\n    display: inline-block;\n    margin: 0 0 8px 0;       /* sits nicely above or next to title */\n  }\n}\n\n\n</style>"
+            "liquid": "{% if product.metafields.custom.bestseller == true %}\n  <span class=\"pf-badge-bestseller\">\n    Best Seller\n  </span>\n{% endif %}\n\n\n<style>\n.pf-badge-bestseller {\n  display: inline-block;\n  padding: 4px 10px;\n  font-size: 12px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n\n  background: #FF0000;        /* red background */\n  color: #ffffff;             /* white text */\n  border: 1px solid #FF0000;  /* red border */\n  border-radius: 0;           /* square corners */\n\n  line-height: 1.2;\n  width: auto;               /* prevents full width */\n}\n\n/* Mobile – center without stretching */\n@media (max-width: 749px) {\n  .pf-badge-bestseller {\n    display: inline-block;    /* stays compact */\n    margin: 8px auto 0;       /* center */\n  }\n}\n\n/* Desktop – left aligned */\n@media (min-width: 750px) {\n  .pf-badge-bestseller {\n    margin: 0 0 8px 0;\n  }\n}\n</style>"
           }
         },
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h5"
+            "heading_tag": "h4"
           }
         },
         "liquid_rChVhc": {
