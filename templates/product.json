@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_LwmCAm": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.custom.bestseller }}"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -187,6 +193,7 @@
         }
       },
       "block_order": [
+        "liquid_LwmCAm",
         "title",
         "liquid_rChVhc",
         "price",
